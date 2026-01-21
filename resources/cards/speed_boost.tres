@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3 uid="uid://bbtgswy16iqfs"]
+
+[ext_resource type="Script" uid="uid://cimjfpm2duvml" path="res://resources/scripts/card_data.gd" id="1_qy66a"]
+
+[resource]
+script = ExtResource("1_qy66a")
+card_name = "Turbo Mode"
+speed_multiplier = 2.5
+metadata/_custom_type_script = "uid://cimjfpm2duvml"
