@@ -5,6 +5,16 @@
 # Import cache
 *.import
 
+# Assets - Images
+/assets/**/*.png
+/assets/**/*.jpg
+/assets/**/*.jpeg
+/assets/**/*.gif
+/assets/**/*.bmp
+/assets/**/*.tga
+/assets/**/*.webp
+/assets/**/*.svg
+
 # Logs and temp files
 *.log
 *.tmp
