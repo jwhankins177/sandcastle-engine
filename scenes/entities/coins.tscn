@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpaaupkvejmt1"]
+
+[ext_resource type="Script" uid="uid://b6d00uux184li" path="res://coins.gd" id="1_vp5jf"]
+[ext_resource type="Texture2D" uid="uid://ci4eon5tq4pf8" path="res://assets/art/Placeholder/kenney_cartography-pack/PNG/Default/chest.png" id="2_0kw7f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83qlk"]
+
+[node name="coins" type="Area2D"]
+script = ExtResource("1_vp5jf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9.536743e-07, 9.536743e-07)
+scale = Vector2(0.31249997, 0.31249997)
+texture = ExtResource("2_0kw7f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_83qlk")

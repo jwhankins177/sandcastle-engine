@@ -1,16 +1,65 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvy60apradr1h"]
+[gd_scene load_steps=4 format=3 uid="uid://dvy60apradr1h"]
+
+[ext_resource type="Texture2D" uid="uid://c167uq1d8iixu" path="res://assets/art/Placeholder/kenney_tiny-dungeon/Tiles/tile_0036.png" id="1_g2ym0"]
+[ext_resource type="Texture2D" uid="uid://bf7ecwmcfce6i" path="res://assets/art/Placeholder/kenney_tiny-dungeon/Tiles/tile_0037.png" id="2_wtf5d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g3nl3"]
-size = Vector2(64, 64)
+size = Vector2(207, 15)
 
-[node name="Wall" type="StaticBody2D"]
+[node name="Horizontal Wall" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(32, 32)
+position = Vector2(105.5, 8.5)
 shape = SubResource("RectangleShape2D_g3nl3")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 64.0
-offset_bottom = 64.0
-color = Color(0.14044744, 0.14044747, 0.14044738, 1)
-metadata/_edit_use_anchors_ = true
+[node name="Tile0036" type="Sprite2D" parent="."]
+position = Vector2(9, 9)
+texture = ExtResource("1_g2ym0")
+
+[node name="Tile0037" type="Sprite2D" parent="Tile0036"]
+position = Vector2(16, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0038" type="Sprite2D" parent="Tile0036"]
+position = Vector2(32, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0039" type="Sprite2D" parent="Tile0036"]
+position = Vector2(48, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0040" type="Sprite2D" parent="Tile0036"]
+position = Vector2(64, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0041" type="Sprite2D" parent="Tile0036"]
+position = Vector2(80, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0042" type="Sprite2D" parent="Tile0036"]
+position = Vector2(96, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0043" type="Sprite2D" parent="Tile0036"]
+position = Vector2(112, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0044" type="Sprite2D" parent="Tile0036"]
+position = Vector2(128, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0045" type="Sprite2D" parent="Tile0036"]
+position = Vector2(144, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0046" type="Sprite2D" parent="Tile0036"]
+position = Vector2(160, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0047" type="Sprite2D" parent="Tile0036"]
+position = Vector2(176, 0)
+texture = ExtResource("2_wtf5d")
+
+[node name="Tile0048" type="Sprite2D" parent="Tile0036"]
+position = Vector2(192, 0)
+texture = ExtResource("2_wtf5d")
