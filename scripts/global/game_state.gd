@@ -1,10 +1,20 @@
+#extends Node
+#
+## Must be outside any func
+#var coins: int = 0 
+#
+#func add_coins(amount: int):
+	#coins += amount
+	#print("Total Coins: ", coins)
 extends Node
 
-# This is your 'Global Table'. 
-# Any script in the game can access this by typing 'GameState.coins'
-var coins: int = 0
+var coins: int = 10
 
-func add_coins(amount: int):
-	coins += amount
-	print("Coins Total: ", coins)
-	# Later, we will add a 'Signal' here to tell the UI to update
+func can_afford(amount: int) -> bool: 
+	return coins >= amount
+func spend_coins(amount: int): 
+	coins -= amount 
+	print("Spent: ", amount, " | Remaining: ", coins)
+func add_coins(amount: int): 
+	coins += amount 
+	print("Total Coins: ", coins)

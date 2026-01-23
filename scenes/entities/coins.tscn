@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cpaaupkvejmt1"]
 
-[ext_resource type="Script" uid="uid://b6d00uux184li" path="res://coins.gd" id="1_vp5jf"]
+[ext_resource type="Script" uid="uid://b6d00uux184li" path="res://resources/scripts/coins.gd" id="1_vp5jf"]
 [ext_resource type="Texture2D" uid="uid://ci4eon5tq4pf8" path="res://assets/art/Placeholder/kenney_cartography-pack/PNG/Default/chest.png" id="2_0kw7f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_83qlk"]

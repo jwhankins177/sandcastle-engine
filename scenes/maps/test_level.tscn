@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dc6hsbvek08qr"]
+[gd_scene load_steps=15 format=4 uid="uid://dc6hsbvek08qr"]
 
 [ext_resource type="Script" uid="uid://dbectuwk8ugb8" path="res://scenes/maps/test_level.gd" id="1_2xbkd"]
 [ext_resource type="PackedScene" uid="uid://c7uowfy4qg0ik" path="res://scenes/entities/character_body_2d.tscn" id="1_10g28"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cwtw8y0cpaipv" path="res://scenes/entities/loot_item.tscn" id="3_v3lgt"]
 [ext_resource type="Resource" uid="uid://bbtgswy16iqfs" path="res://resources/cards/speed_boost.tres" id="4_q56ci"]
 [ext_resource type="Script" uid="uid://be686m4dvxaif" path="res://scenes/maps/coin_display.gd" id="6_4thld"]
+[ext_resource type="PackedScene" uid="uid://cpaaupkvejmt1" path="res://scenes/entities/coins.tscn" id="7_lrm2r"]
+[ext_resource type="AudioStream" uid="uid://vi0syarocldu" path="res://assets/audio/Background.wav" id="8_yp73u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4thld"]
 texture = ExtResource("2_q56ci")
@@ -329,14 +331,9 @@ script = ExtResource("1_2xbkd")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="CoinDisplay" type="Label" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_left = -0.105000004
-anchor_top = -0.043
-anchor_right = -0.026
-offset_left = -197.04
-offset_top = 5.8640003
-offset_right = -169.048
-offset_bottom = 1.0
+offset_right = 61.0
+offset_bottom = 23.0
+text = "Coins: 0"
 script = ExtResource("6_4thld")
 
 [node name="Floor" type="TileMapLayer" parent="."]
@@ -361,3 +358,30 @@ shape = SubResource("RectangleShape2D_2xbkd")
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 position_smoothing_enabled = true
+
+[node name="coins" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-358, 89)
+
+[node name="coins2" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-265, 38)
+
+[node name="coins3" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-432, 34)
+
+[node name="coins4" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-302, -52)
+
+[node name="coins5" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-369, 49)
+
+[node name="coins6" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-401, -31)
+
+[node name="coins7" parent="." instance=ExtResource("7_lrm2r")]
+position = Vector2(-299, 2)
+
+[node name="Background Music" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(2, 0)
+stream = ExtResource("8_yp73u")
+volume_db = -10.0
+autoplay = true
